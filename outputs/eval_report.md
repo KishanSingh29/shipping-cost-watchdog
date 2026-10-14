@@ -13,8 +13,8 @@ Cases excluded due to incomplete labels: 2
 ## Metrics
 
 - Flag accuracy: **1.000**
-- Verdict accuracy: **1.000**
-- Note ID accuracy: **1.000**
+- Verdict accuracy: **0.964**
+- Note ID accuracy: **0.964**
 
 ## Labelled case results
 
@@ -24,7 +24,7 @@ Cases excluded due to incomplete labels: 2
 | C002 | Ahmedabad-Mumbai | 2025-01-20 | 1 | 1 | justified | justified | N002 | N002 |
 | C003 | Chennai-Bangalore | 2025-02-24 | 1 | 1 | justified | justified | N001 | N001 |
 | C004 | Chennai-Bangalore | 2025-03-10 | 1 | 1 | unexplained | unexplained | (blank) | (blank) |
-| C005 | Mumbai-Delhi | 2025-05-12 | 1 | 1 | unexplained | unexplained | (blank) | (blank) |
+| C005 | Mumbai-Delhi | 2025-05-12 | 1 | 1 | unexplained | justified | (blank) | N003 |
 | C006 | Mumbai-Pune | 2025-09-15 | 0 | 0 | not_flagged | not_flagged | (blank) | (blank) |
 | C007 | Delhi-Jaipur | 2024-05-20 | 0 | 0 | not_flagged | not_flagged | (blank) | (blank) |
 | C008 | Mumbai-Delhi | 2024-07-29 | 0 | 0 | not_flagged | not_flagged | (blank) | (blank) |
