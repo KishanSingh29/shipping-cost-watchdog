@@ -1,0 +1,31 @@
+case_id,route,week_of,expected_flagged,expected_verdict,expected_note_id,scenario,notes_for_human_labeler
+C001,Delhi-Jaipur,2024-11-11,1,,,Real flagged route-week,Inspect raw shipment history and notes.
+C002,Ahmedabad-Mumbai,2025-01-20,1,,,Real flagged route-week,Inspect N002 route and dates.
+C003,Chennai-Bangalore,2025-02-24,1,,,Real flagged route-week,Inspect N001 flooding window.
+C004,Chennai-Bangalore,2025-03-10,1,,,Adversarial recovery window,Flooding ended; check recovery by Mar 9 and N009.
+C005,Mumbai-Delhi,2025-05-12,1,,,Real flagged route-week,Inspect N003 nationwide diesel increase.
+C006,Mumbai-Pune,2025-09-15,0,,,Negative evidence,Candidate note N006 is later and says stable demand.
+C007,Delhi-Jaipur,2024-05-20,0,,,Negative direction,"N007 says road conditions improved, not increased costs."
+C008,Mumbai-Delhi,2024-07-29,0,,,Negative evidence,N005 says costs were not significantly affected.
+C009,Kolkata-Bhubaneswar,2025-06-09,0,,,Negative evidence,N008 says no significant disruptions.
+C010,Delhi-Jaipur,2024-03-11,0,,,Wrong route,N004 toll affects routes not present in dataset.
+C011,Delhi-Jaipur,2025-10-27,0,,,No rate change,N010 says compliance costs absorbed without a rate change.
+C012,Chennai-Bangalore,2025-03-17,0,,,Recovery note,N009 says route returned to normal.
+C013,Ahmedabad-Mumbai,2025-02-24,0,,,Wrong route,Wrong route for N001.
+C014,Delhi-Jaipur,2025-02-24,0,,,Wrong route,Wrong route despite nearby dates.
+C015,Mumbai-Delhi,2025-02-24,0,,,Wrong route,Wrong route for flooding note.
+C016,Chennai-Bangalore,2024-02-24,0,,,Wrong year,Wrong year for N001.
+C017,Ahmedabad-Mumbai,2024-01-20,0,,,Wrong year,Wrong year for N002.
+C018,Delhi-Jaipur,2025-05-12,0,,,Nationwide note,"N003 may apply by date, but flag status must be checked from engine."
+C019,Chennai-Bangalore,2025-03-03,0,,,Date range,Inside flooding interval; human label should assess support.
+C020,Chennai-Bangalore,2025-03-10,0,,,Recovery boundary,Human label recovery boundary.
+C021,Ahmedabad-Mumbai,2025-01-13,0,,,Before effective date,Before N002 effective date.
+C022,Mumbai-Delhi,2025-05-05,0,,,Start-week boundary,N003 start-week boundary.
+C023,Mumbai-Delhi,2025-05-19,0,,,Ongoing nationwide note,N003 remains nationwide from starting week onward.
+C024,Delhi-Jaipur,2025-05-12,0,,,Nationwide applicability,Validate route and timing for N003.
+C025,Chennai-Bangalore,2025-02-17,0,,,Before effective date,Week immediately before N001 begins.
+C026,Chennai-Bangalore,2025-03-17,0,,,Recovery note,N009 recovery note date.
+C027,Kolkata-Bhubaneswar,2025-09-22,0,,,Stable demand,"N006 says stable demand, not a cost increase."
+C028,Delhi-Jaipur,2024-05-20,0,,,Negative direction,N007 is a negative-direction note.
+C029,Mumbai-Delhi,2024-07-29,0,,,Negative evidence,Negative evidence should never justify a flag.
+C030,Ahmedabad-Mumbai,2025-01-20,1,,,Retrieval robustness,Label independently; this duplicates a real route-week for robustness.

@@ -1,0 +1,22 @@
+# Deterministic core logic configuration. Thresholds are starting assumptions, not trained values.
+paths:
+  shipments: data/shipment_records.csv
+  notes: data/context_notes.csv
+  output_template: data/sample_output_format_v2.csv
+  output: outputs/watchlist.csv
+thresholds:
+  own_history_increase_pct: 0.10
+  peer_increase_pct: 0.10
+  own_history_z_score: 2.0
+history:
+  weeks: 8
+
+retrieval:
+  top_k: 10
+  method: semantic
+  model: sentence-transformers/all-MiniLM-L6-v2
+
+llm:
+  provider: none  # set to ollama only after local Ollama/model is installed
+  model: qwen2.5:7b
+  ollama_url: http://localhost:11434

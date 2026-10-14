@@ -1,0 +1,4 @@
+route,week_of,note_id,audit,detail
+Ahmedabad-Mumbai,2025-01-20,N002,PASS,route_ok=True; date_ok=True; positive_cost_impact=True
+Chennai-Bangalore,2025-02-24,N001,PASS,route_ok=True; date_ok=True; positive_cost_impact=True; recovery wording requires manual boundary review
+Mumbai-Delhi,2025-05-12,N003,PASS,route_ok=True; date_ok=True; positive_cost_impact=True

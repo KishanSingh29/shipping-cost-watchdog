@@ -1,0 +1,9 @@
+# Reproducibility Report
+
+Result: PASS
+
+All three CSV outputs are byte-identical, verified using SHA-256.
+
+watchlist_run1.csv: 5cb9728b6b420ce91addb9bce4c116c2394519a79723f5c6ff74aed982628d2f
+watchlist_run2.csv: 5cb9728b6b420ce91addb9bce4c116c2394519a79723f5c6ff74aed982628d2f
+watchlist_run3.csv: 5cb9728b6b420ce91addb9bce4c116c2394519a79723f5c6ff74aed982628d2f
